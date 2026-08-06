@@ -410,14 +410,14 @@ spec:
         readinessProbe:
           exec:
             command: ["/bin/grpc_health_probe", "-addr=:7000"]
-          intialDelaySeconds: 5
+          initialDelaySeconds: 5      # correct spelling
           timeoutSeconds: 5
-          periodSeconds: 5
+          periodSeconds: 10
           failureThreshold: 3
         livenessProbe:
           exec:
             command: ["/bin/grpc_health_probe", "-addr=:7000"]
-          intialDelaySeconds: 10
+          initialDelaySeconds: 10     # correct spelling
           timeoutSeconds: 5
           periodSeconds: 5
           failureThreshold: 3
