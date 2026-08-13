@@ -658,7 +658,7 @@ spec:
           # # ENV_PLATFORM: One of: local, gcp, aws, azure, onprem, alibaba
           # # When not set, defaults to "local" unless running in GKE, otherwies auto-sets to gcp
           - name: ENV_PLATFORM
-            value: "aws"
+            value: "local"
           - name: ENABLE_PROFILER
             value: "0"
           # - name: CYMBAL_BRANDING
